@@ -1,0 +1,410 @@
+#container{
+  display: none;
+  position: relative;
+  width: 350px;
+  height: 550px;
+  margin: 80px auto;
+}
+
+body{
+  background-color: #fff;
+}
+#mainBody{
+  position: relative;
+  z-index: 1;
+  height: 550px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 3px solid #000;
+}
+
+#shadow{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 550px;
+  width: 350px;
+  background-color: #000;
+  border-radius: 25px;
+  z-index: 0;
+}
+
+#pad{
+  position: absolute;
+  bottom: -3px;
+  height: 380px;
+  width: 350px;
+  background-color: #aeffda;
+  border-radius: 25px;
+  z-index: 2;
+  border: 3px solid #000;
+}
+
+#button1{
+    margin-left: 20px;
+}
+
+#button5{
+    margin-left: 20px;
+}
+
+#buttonSubmit{
+    margin-left: 20px;
+}
+
+#button9{
+    margin-left: 20px;
+}
+
+#button2{
+      margin-left: 100px;
+}
+
+#button6{
+      margin-left: 100px;
+}
+
+#button0{
+      margin-left: 100px;
+}
+
+#buttonBack{
+      margin-left: 180px;
+}
+
+#button3{
+      margin-left: 180px;
+}
+
+#button7{
+      margin-left: 180px;
+}
+
+#buttonClear{
+      margin-left: 180px;
+}
+
+#buttonPause{
+      margin-left: 260px;
+}
+
+#button4{
+      margin-left: 260px;
+}
+
+#button8{
+      margin-left: 260px;
+}
+
+#firstRow{
+  margin-top:30px
+}
+#secondRow{
+  margin-top:115px
+}
+
+#thirdRow{
+  margin-top:200px
+}
+
+#fourthRow{
+  margin-top:280px
+}
+
+button,#themesIconDiv,#greenDiv,#blueDiv,#purpleDiv{
+  font-size:20px;
+  position: relative;
+  z-index: 1;
+  height:60px;
+  width: 60px;
+  float: left;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+#bShadow,
+#clearShadow, #submitShadow,
+#bShadow1,#bShadow2,#bShadow3,#bShadow4,#bShadow5,#bShadow6,
+#bShadow7,#bShadow8,#bShadow9,#bShadow0,#backShadow,#startShadow,#rulesShadow,#backMShadow,#rStartShadow,
+#settingsShadow,#themesShadow,#greenShadow,#blueShadow,#themesToSettingsShadow,#settingsToMainShadow,#purpleShadow{
+  position: absolute;
+  z-index: 0;
+  height:60px;
+  width: 60px;
+  background-color: #000;
+  float: left;
+  margin: 3px 3px;
+  border-radius: 10px;
+}
+
+#clear, #submit, #clearShadow, #submitShadow{
+    width: 140px;
+}
+
+#first,#operation,#second,#result{
+  float: left;
+  margin: 30px 0px 0px 27px;
+  font-size:40px
+}
+
+#userWindow{
+  margin:10px 0px 0px 27px;
+  height: 50px;
+  width: 280px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#userWindow::placeholder{
+  font-size: 40px;
+  color: var(--placeholder-color, grey);
+  text-align: center;
+}
+
+#backspaceIcon,#pause{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#score{
+  height: 60px;
+  width: 300px;
+  font-size: 50px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#scoreShadow{
+  position: absolute;
+  height: 60px;
+  width: 300px;
+  top: 43px;
+  right: 95px;
+  z-index: 0;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+#Dscore,#Uscore{
+  margin: 0;
+  display: inline-block;
+}
+
+#Dscore::after {
+  margin-left: 5px;
+}
+
+#Uscore {
+  margin-left: 5px;
+}
+
+
+
+
+#rulesMenu{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #aeffda;
+}
+
+#rulesHeader{
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+#rulesText{
+  text-align: center;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+#gameWindow{
+  display: none;
+}
+
+
+
+
+
+#mainMenu,#settingsMenu,#themesMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #aeffda;
+}
+
+h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+#startShadow{
+  margin-top: 5px;
+  margin-left: 45.2%;
+  width: 200px;
+  height: 60px;
+}
+
+#startButton{
+  margin-left: 45%;
+  font-size: 40px;
+  width: 200px;
+  height: 60px;
+
+}
+
+#rulesButton{
+  margin-top: 50px;
+  margin-left: 45%;
+  font-size: 40px;
+  width: 200px;
+  height: 60px;
+}
+
+#rulesShadow{
+  margin-top: 115px;
+  margin-left: 45.2%;
+  width: 200px;
+  height: 60px;
+}
+
+#backMButton{
+  margin-top: 50px;
+  margin-left: 30%;
+  font-size: 40px;
+  width: 200px;
+  height: 60px;
+}
+
+#backMShadow{
+  margin-top: 55px;
+  margin-left: 30.2%;
+  width: 200px;
+  height: 60px;
+}
+
+#rStartButton{
+  margin-top: -60px;
+  margin-left: 60%;
+  font-size: 40px;
+  width: 200px;
+  height: 60px;
+}
+
+#rStartShadow{
+  margin-top: 55px;
+  margin-left: 60.2%;
+  width: 200px;
+  height: 60px;
+}
+
+#settingsMenu{
+  display: none;
+}
+
+#settingsButton{
+  margin-top: 50px;
+  margin-left: 45%;
+  font-size: 40px;
+  width: 200px;
+  height: 60px;
+}
+
+#settingsShadow{
+  margin-top: 225px;
+  margin-left: 45.2%;
+  width: 200px;
+  height: 60px;
+}
+
+#themesButton,#greenButton,#blueButton,#themesToSettingsButton,#settingsToMainButton,#purpleButton{
+  padding: 0px;
+  margin-top: 50px;
+  margin-left: 42%;
+  font-size: 40px;
+  width: 300px;
+  height: 60px;
+}
+
+#themesShadow,#greenShadow,#blueShadow,#themesToSettingsShadow,#settingsToMainShadow,#purpleShadow{
+    margin-top: 55px;
+    margin-left: 42.2%;
+    width: 300px;
+    height: 60px;
+}
+
+#themesButtonText,#greenText,#blueText,#themesToSettingsText,#settingsToMainText,#purpleText{
+  text-align: center;
+  margin-top: 5px;
+}
+
+#themesIconDiv,#greenDiv,#blueDiv,#purpleDiv{
+  float: left;
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 53px;
+  height: 53px;
+}
+
+#themesIcon{
+  width: 40px;
+  margin-top: 5px;
+}
+
+#themesMenu{
+  display: none;
+}
+
+#greenDiv{
+  background-color: #aeffda;
+}
+
+#blueShadow{
+  margin-top: 165px;
+}
+
+#purpleShadow{
+  margin-top: 275px;
+}
+
+#themesToSettingsShadow{
+  margin-top: 385px;
+}
+
+#settingsToMainShadow{
+  margin-top: 165px;
+}
+
+#blueDiv{
+  background-color: #00a4ff;
+}
+
+#purpleDiv{
+  background-color: #d8c2d7;
+}

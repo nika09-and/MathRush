@@ -1,0 +1,445 @@
+html:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Rush</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div id= "container">
+        <div id = "mainBody">
+          <div id= "first">1000</div>
+          <div id= "operation">+</div>
+          <div id= "second">1000</div>
+          <div id= "result">=</div>
+
+          <input type="number" min="0" id= "userWindow" placeholder="input result" >
+            
+        </input>
+        
+        </div>
+        <div id = "shadow">chu</div>
+        <div id= "pad">
+
+          <div id="firstRow">
+            <div id= "button1">
+              <button id="n1">1</button>
+              <div id="bShadow1"></div>
+            </div>
+            <div id= "button2">
+              <button id="n2">2</button>
+              <div id="bShadow2"></div>
+            </div>
+            <div id= "button3">
+              <button id= "n3">3</button>
+              <div id="bShadow3"></div>
+            </div>
+            <div id= "button4">
+              <button id= "n4">4</button>
+              <div id="bShadow4"></div>
+            </div>
+          </div>
+
+          <div id="secondRow">
+            <div id= "button5">
+              <button id= "n5">5</button>
+              <div id="bShadow5"></div>
+            </div>
+            <div id= "button6">
+              <button id= "n6">6</button>
+              <div id="bShadow6"></div>
+            </div>
+            <div id= "button7">
+              <button id = "n7">7</button>
+              <div id="bShadow7"></div>
+            </div>
+            <div id= "button8">
+              <button id= "n8">8</button>
+              <div id="bShadow8"></div>
+            </div>
+          </div>
+
+           <div id="thirdRow">
+            <div id= "button9">
+              <button id= "n9">9</button>
+              <div id="bShadow9"></div>
+            </div>
+            <div id= "button0">
+              <button id= "n0">0</button>
+              <div id="bShadow0"></div>
+            </div>
+            <div id= "buttonClear">
+              <button id= "clear">CLEAR</button>
+              <div id="clearShadow"></div>
+            </div>
+          </div>
+
+          <div id="fourthRow">
+            <div id= "buttonSubmit">
+              <button id= "submit">SUBMIT</button>
+              <div id="submitShadow"></div>
+            </div>
+            <div id= "buttonBack">
+              <button id= "backSpace">B</button>
+              <div id="backShadow"></div>
+            </div>
+            <div id= "buttonPause">
+              <button>P</button>
+              <div id= "bShadow"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+	<script src="script.js"></script>
+  </body>
+</html>
+
+css:
+
+#container{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    margin: 80px auto;
+  }
+  
+  body{
+    background-color: #fff;
+  }
+  #mainBody{
+    position: relative;
+    z-index: 1;
+    height: 550px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 3px solid #000;
+  }
+  
+  #shadow{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 550px;
+    width: 350px;
+    background-color: #000;
+    border-radius: 25px;
+    z-index: 0;
+  }
+  
+  #pad{
+    position: absolute;
+    bottom: -3px;
+    height: 380px;
+    width: 350px;
+    background-color: #aeffda;
+    border-radius: 25px;
+    z-index: 2;
+    border: 3px solid #000;
+  }
+  
+  #button1{
+      margin-left: 20px;
+  }
+  
+  #button5{
+      margin-left: 20px;
+  }
+  
+  #buttonSubmit{
+      margin-left: 20px;
+  }
+  
+  #button9{
+      margin-left: 20px;
+  }
+  
+  #button2{
+        margin-left: 100px;
+  }
+  
+  #button6{
+        margin-left: 100px;
+  }
+  
+  #button0{
+        margin-left: 100px;
+  }
+  
+  #buttonBack{
+        margin-left: 180px;
+  }
+  
+  #button3{
+        margin-left: 180px;
+  }
+  
+  #button7{
+        margin-left: 180px;
+  }
+  
+  #buttonClear{
+        margin-left: 180px;
+  }
+  
+  #buttonPause{
+        margin-left: 260px;
+  }
+  
+  #button4{
+        margin-left: 260px;
+  }
+  
+  #button8{
+        margin-left: 260px;
+  }
+  
+  #firstRow{
+    margin-top:30px
+  }
+  #secondRow{
+    margin-top:115px
+  }
+  
+  #thirdRow{
+    margin-top:200px
+  }
+  
+  #fourthRow{
+    margin-top:280px
+  }
+  
+  button{
+    font-size:20px;
+    position: relative;
+    z-index: 1;
+    height:60px;
+    width: 60px;
+    float: left;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #ffff;
+    cursor: pointer;
+  }
+  
+  #bShadow,
+  #clearShadow, #submitShadow,
+  #bShadow1,#bShadow2,#bShadow3,#bShadow4,#bShadow5,#bShadow6,
+  #bShadow7,#bShadow8,#bShadow9,#bShadow0,#backShadow{
+    position: absolute;
+    z-index: 0;
+    height:60px;
+    width: 60px;
+    background-color: #000;
+    float: left;
+    margin: 3px 3px;
+    border-radius: 10px;
+  }
+  
+  #clear, #submit, #clearShadow, #submitShadow{
+      width: 140px;
+  }
+  
+  #first,#operation,#second,#result{
+    float: left;
+    margin: 30px 0px 0px 27px;
+    font-size:40px
+  }
+  
+  #userWindow{
+    margin:10px 0px 0px 27px;
+    height: 50px;
+    width: 280px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+js:
+
+const userResult = document.getElementById("userWindow");
+const number1 = document.getElementById("n1");
+const number2 = document.getElementById("n2");
+const number3 = document.getElementById("n3");
+const number4 = document.getElementById("n4");
+const number5 = document.getElementById("n5");
+const number6 = document.getElementById("n6");
+const number7 = document.getElementById("n7");
+const number8 = document.getElementById("n8");
+const number9 = document.getElementById("n9");
+const number0 = document.getElementById("n0");
+const clear = document.getElementById("clear");
+const firstNumber = document.getElementById("first");
+const secondNumber = document.getElementById("second");
+const operation = document.getElementById("operation");
+const backSpace = document.getElementById("backSpace")
+const bsubmit = document.getElementById("submit")
+const submit = document.getElementById("submit");
+const shadow1 = document.getElementById("bShadow1")
+const shadow2 = document.getElementById("bShadow2")
+const shadow3 = document.getElementById("bShadow3")
+const shadow4 = document.getElementById("bShadow4")
+const shadow5 = document.getElementById("bShadow5")
+const shadow6 = document.getElementById("bShadow6")
+const shadow7 = document.getElementById("bShadow7")
+const shadow8 = document.getElementById("bShadow8")
+const shadow9 = document.getElementById("bShadow9")
+const shadow0 = document.getElementById("bShadow0")
+const shadowC = document.getElementById("clearShadow")
+const shadowS = document.getElementById("submitShadow")
+const shadowB = document.getElementById("backShadow")
+const shadowSu = document.getElementById("submitShadow")
+
+
+number1.onclick = () => click(number1, shadow1, "1");
+number2.onclick = () => click(number2, shadow2, "2");
+number3.onclick = () => click(number3, shadow3, "3");
+number4.onclick = () => click(number4, shadow4, "4");
+number5.onclick = () => click(number5, shadow5, "5");
+number6.onclick = () => click(number6, shadow6, "6");
+number7.onclick = () => click(number7, shadow7, "7");
+number8.onclick = () => click(number8, shadow8, "8");
+number9.onclick = () => click(number9, shadow9, "9");
+number0.onclick = () => click(number0, shadow0, "0");
+clear.onclick = () => click(clear, shadowC, "C");
+backSpace.onclick = () => click(backSpace, shadowB, "B")
+submit.onclick = () => submitFunction(submit, submitShadow)
+
+
+//===============functions================================
+
+//===============click function================================
+function click(number, shadow, value){
+    if(value == "C" ){
+        userResult.value = "";
+
+        shadow.style.display = "none";
+        number.style.height = "59px"; 
+        number.style.width = "139px";
+
+        setTimeout(function() {
+            shadow.style.display = "block";
+            number.style.height = "60px"; 
+            number.style.width = "140px";
+        }, 300);
+        return;
+    }
+    else if(value == "B"){
+        if (userResult.value.length > 0) {
+            userResult.value = userResult.value.slice(0, -1);
+        }
+    }
+    else{
+        userResult.value += value;
+    }
+
+    shadow.style.display = "none";
+    number.style.height = "59px"; 
+    number.style.width = "59px";
+
+    setTimeout(function() {
+        shadow.style.display = "block";
+        number.style.height = "60px"; 
+        number.style.width = "60px";
+    }, 300);
+}
+
+////===============geting ranfom number================================
+
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomOperation() {
+    let operation = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
+
+    if(operation == 1){return "-"}
+    if(operation == 2){return "+"}
+    if(operation == 3){return "*"}
+    if(operation == 4){return "/"}
+}
+
+////===============submit and random function================================
+
+function submitFunction(button, shadow){
+    if(userWindow.value != ""){
+        if(op == "-"){
+            result = f1 - f2;
+        }
+        if(op == "+"){
+            result = f1 + f2;
+        }
+        if(op == "*"){
+            result = f1 * f2;
+        }
+        if(op == "/"){
+            result = f1 / f2;
+        }
+
+        console.log(result)
+        const userInput = parseInt(userWindow.value);
+
+        if(userInput == result){
+            userWindow.style.backgroundColor = "#62b531";
+            userWindow.placeHolder = "Correct!";
+            userWindow.value = "";
+
+            setTimeout(function() {
+                userWindow.style.backgroundColor = "#ffff";
+                userWindow.placeHolder = "input result";
+            }, 300);
+        }   
+        else{
+            userWindow.style.backgroundColor = "#f03333";
+            userWindow.placeHolder = "Wrong!";
+            userWindow.value = "";
+
+            setTimeout(function() {
+                userWindow.style.backgroundColor = "#ffff";
+                userWindow.placeHolder = "input result";
+            }, 300);
+        }     
+    }
+
+    let f1 = getRandomNumber(1, 100);
+    let f2 = getRandomNumber(1, 100);
+    let op = getRandomOperation();
+    let isTrue= true;
+    let result;
+
+    if(op == "-"){
+        while(isTrue){
+            if(op == "-"){
+                if(f1 < f2){
+                    f2 = getRandomNumber(1, 100);
+                }
+            }
+            else{
+                isTrue = false;
+            }
+        }
+    }
+
+    firstNumber.innerText = f1;
+    secondNumber.innerText = f2;
+    operation.innerText = op;
+
+    shadow.style.display = "none";
+    button.style.height = "59px"; 
+    button.style.width = "139px";
+
+    setTimeout(function() {
+        shadow.style.display = "block";
+        button.style.height = "60px"; 
+        button.style.width = "140px";
+    }, 300);
+}

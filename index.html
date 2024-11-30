@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Rush</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+
+      <div id = "mainMenu">
+
+        <h1>Math Rush</h1>
+
+        <button id = "startButton"> START </button>
+        <div id = "startShadow"></div> 
+
+        <button id = "rulesButton">RULES</button>
+        <div id = "rulesShadow"></div> 
+        
+        <button id = "settingsButton">SETTING</button>
+        <div id = "settingsShadow"></div> 
+
+      </div>
+      
+
+      <div id= "rulesMenu">
+
+        <p id= "rulesHeader">Rules</p>
+
+        <p id= "rulesText">mian goal of the game is to answer mathematical operations as fast as you can. you will see your goal score on the top right cornern(you will aslso
+          see a timer going on the tiop left corner). correct answer means plus 1 score and wrong answer neither add a score nor subtract. when you hit your goal score the time stops
+          and shows you the time you needed fo achiving your goal score.
+        </p>
+
+        <button id = "backMButton">Back</button>
+        <div id = "backMShadow"></div>
+
+        <button id = "rStartButton">START</button>
+        <div id = "rStartShadow"></div>
+
+      </div>
+
+
+      <div id = "settingsMenu">
+        <h1>SETTINGS</h1>
+
+        <button id = "themesButton">
+          <div id = "themesIconDiv"><img src="icons/themes_icon.png" id= "themesIcon"></div>
+          <p id= "themesButtonText"> THEMES </p>
+        </button>
+        <div id = "themesShadow"></div>
+
+        <button id = "settingsToMainButton">
+          <p id= "settingsToMainText"> BACK </p>
+        </button>
+        <div id = "settingsToMainShadow"></div>
+      </div>
+
+      <div id = "themesMenu">
+        <h1>THEMES</h1>
+
+        <button id = "greenButton">
+          <div id = "greenDiv"></div>
+          <p id= "greenText"> GREEN </p>
+        </button>
+        <div id = "greenShadow"></div>
+
+        <button id = "blueButton">
+          <div id = "blueDiv"></div>
+          <p id= "blueText"> BLUE </p>
+        </button>
+        <div id = "blueShadow"></div>
+
+        <button id = "purpleButton">
+          <div id = "purpleDiv"></div>
+          <p id= "purpleText"> PURPLE </p>
+        </button>
+        <div id = "purpleShadow"></div>
+
+        <button id = "themesToSettingsButton">
+          <p id= "themesToSettingsText"> BACK </p>
+        </button>
+        <div id = "themesToSettingsShadow"></div>
+
+      </div>
+
+
+      <div id= "container">
+        <div id = "mainBody">
+          <div id= "first">1000</div>
+          <div id= "operation">+</div>
+          <div id= "second">1000</div>
+          <div id= "result">=</div>
+
+          <input type="number" min="0" id= "userWindow" placeholder="input result" >
+            
+        </input>
+        
+        </div>
+        <div id = "shadow">chu</div>
+        <div id= "pad">
+
+          <div id="firstRow">
+            <div id= "button1">
+              <button id="n1">1</button>
+              <div id="bShadow1"></div>
+            </div>
+            <div id= "button2">
+              <button id="n2">2</button>
+              <div id="bShadow2"></div>
+            </div>
+            <div id= "button3">
+              <button id= "n3">3</button>
+              <div id="bShadow3"></div>
+            </div>
+            <div id= "button4">
+              <button id= "n4">4</button>
+              <div id="bShadow4"></div>
+            </div>
+          </div>
+
+          <div id="secondRow">
+            <div id= "button5">
+              <button id= "n5">5</button>
+              <div id="bShadow5"></div>
+            </div>
+            <div id= "button6">
+              <button id= "n6">6</button>
+              <div id="bShadow6"></div>
+            </div>
+            <div id= "button7">
+              <button id = "n7">7</button>
+              <div id="bShadow7"></div>
+            </div>
+            <div id= "button8">
+              <button id= "n8">8</button>
+              <div id="bShadow8"></div>
+            </div>
+          </div>
+
+           <div id="thirdRow">
+            <div id= "button9">
+              <button id= "n9">9</button>
+              <div id="bShadow9"></div>
+            </div>
+            <div id= "button0">
+              <button id= "n0">0</button>
+              <div id="bShadow0"></div>
+            </div>
+            <div id= "buttonClear">
+              <button id= "clear">CLEAR</button>
+              <div id="clearShadow"></div>
+            </div>
+          </div>
+
+          <div id="fourthRow">
+            <div id= "buttonSubmit">
+              <button id= "submit">SUBMIT</button>
+              <div id="submitShadow"></div>
+            </div>
+            <div id= "buttonBack">
+              <button id= "backSpace"><img src="icons/tabler--backspace-filled.png" id= "backspaceIcon"> </button>
+              <div id="backShadow"></div>
+            </div>
+            <div id= "buttonPause">
+              <button id="pauseButton"><img src="icons/ph--pause-fill.png" id= "pause" ></button>
+              <div id= "bShadow"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id= "score">
+        <p id= "Dscore">100 / </p>
+        <p id= "Uscore">0</p>
+      </div>
+      <div id= "scoreShadow"></div>
+    </main>
+	<script src="script.js"></script>
+  </body>
+</html>
